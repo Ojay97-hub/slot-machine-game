@@ -22,7 +22,6 @@ body {
     background-color: #fff; 
     color: #333; 
 }
-
 #rules h2 {
     margin-bottom: 10px;
     color: #666; 
@@ -33,21 +32,40 @@ body {
     margin-left: 0; 
     padding-left: 20px; 
 }
+#oddsBreakdown {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#oddsBreakdown th, #oddsBreakdown td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#oddsBreakdown th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#oddsBreakdown tr:nth-child(even) {
+    background-color: #333;
+}
 h1 {
     margin-bottom: 20px;
     color: #e74c3c;
     font-family: 'Cinzel', serif;
 }
-
 #reels {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
 }
-
 .reel {
     width: 30%;
     padding: 20px;
+    margin: 5px;
     background: #ecf0f1;
     border: 2px solid #e74c3c;
     height: 100px;

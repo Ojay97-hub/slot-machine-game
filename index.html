@@ -25,6 +25,7 @@
             <div id="won">Total Won: $0</div>
             <div id="lost">Total Lost: $0</div>
             <div id="oddsSection">
+                <h3>Odds Breakdown</h3>
                 <label for="odds">Set Betting Values/Odds:</label>
                 <select id="odds">
                     <option value="low">Low</option>
@@ -32,8 +33,40 @@
                     <option value="high">High</option>
                 </select>
                 <button id="setOddsBtn">Set Odds</button>
-                <!-- Add a div to display odds breakdown -->
-                <div id="oddsBreakdown"></div>
+                <table id="oddsBreakdown">
+                    <thead>
+                        <tr>
+                            <th>Odds</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Low</td>
+                            <td>5x</td>
+                            <td>6x</td>
+                            <td>10x</td>
+                            <td>20x</td>
+                        </tr>
+                        <tr>
+                            <td>Medium</td>
+                            <td>10x</td>
+                            <td>12x</td>
+                            <td>20x</td>
+                            <td>40x</td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td>20x</td>
+                            <td>24x</td>
+                            <td>40x</td>
+                            <td>80x</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div id="depositSection">
                 <label for="depositAmount">Deposit Amount:</label>
@@ -59,6 +92,7 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
 
 
 
